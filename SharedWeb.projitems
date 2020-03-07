@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>080852f5-8880-42cd-8a4c-03c8f0b69e2b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedWeb</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\BaseController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\DataResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controllers\LogCallsAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PocoStore\PocoStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PocoStore\PocoStoreConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebApi\WebApiClient.cs" />
+  </ItemGroup>
+</Project>
