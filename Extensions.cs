@@ -12,34 +12,13 @@ using System.Threading.Tasks;
 
 namespace Fastnet.Core.Web
 {
-    /// <summary>
-    /// modern browsers
-    /// </summary>
     public enum Browsers
     {
-        /// <summary>
-        /// 
-        /// </summary>
         Unknown,
-        /// <summary>
-        /// Microswoft Edge
-        /// </summary>
         Edge,
-        /// <summary>
-        /// Internet Explorer
-        /// </summary>
         IE,
-        /// <summary>
-        /// 
-        /// </summary>
         Chrome,
-        /// <summary>
-        /// 
-        /// </summary>
         Firefox,
-        /// <summary>
-        /// 
-        /// </summary>
         Safari
     }
     /// <summary>
@@ -215,6 +194,7 @@ namespace Fastnet.Core.Web
         /// as this method pulls the json string out and converts it using ToInstance()
         /// </remarks>
         /// <typeparam name="T"></typeparam>
+        /// <param name="request"></param>
         /// <returns></returns>
         public static async Task<T> FromBody<T>(this HttpRequest request)
         {
@@ -239,7 +219,6 @@ namespace Fastnet.Core.Web
         /// </summary>
         /// <param name="env"></param>
         /// <param name="cs"></param>
-        /// <param name="log"></param>
         /// <returns></returns>
         public static string LocaliseConnectionString(this IWebHostEnvironment env, string cs)
         {
